@@ -1,19 +1,23 @@
-body
-{
+body {
     background: #000000;
 }
 
-* { box-sizing: border-box; }
+* {
+    box-sizing: border-box;
+}
 
-.video-background
-{
+.video-background {
     background: #000;
     position: fixed;
-    top: 0; right: 0; bottom: 0; left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     z-index: -99;
 }
-.video-foreground, .video-background iframe
-{
+
+.video-foreground,
+.video-background iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -22,12 +26,25 @@ body
     pointer-events: none;
 }
 
-@media (min-aspect-ratio: 16/9)
-{
-    .video-foreground { height: 300%; top: -100%; }
+@media (min-aspect-ratio: 16/9) {
+    .video-foreground {
+        height: 300%;
+        top: -100%;
+    }
 }
 
-@media (max-aspect-ratio: 16/9)
-{
-    .video-foreground { width: 300%; left: -100%; }
+@media (max-aspect-ratio: 16/9) {
+    .video-foreground {
+        width: 300%;
+        left: -100%;
+    }
+}
+
+#player {
+    position: absolute;
+    height:100vh;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
 }
