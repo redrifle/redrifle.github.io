@@ -1,7 +1,50 @@
 body {
     background: #000000;
+    overflow:hidden;
 }
 
+#front-vid
+{
+    position:absolute;
+    width: 65%;
+    height: 80%;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+#front-vid-content
+{
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.front-protip
+{
+    position: absolute;
+    left: 50%;
+    top: 5%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.front-protip h1
+{
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: medium;
+    color: white;
+}
+
+/*
 * {
     box-sizing: border-box;
 }
@@ -48,3 +91,4 @@ body {
     bottom: 0px;
     left: 0px;
 }
+*/
