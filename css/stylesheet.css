@@ -23,6 +23,7 @@ body {
     object-fit: contain;
     top: 50%;
     transform: translateY(-50%);
+    border: 2px solid gray;
 }
 
 .front-protip
