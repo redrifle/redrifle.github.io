@@ -1,5 +1,5 @@
 (function(window, document, undefined) {
-var max = 49;
+var max = 75;
 function random_num()
 {
 	return Math.random() * max | 0;
